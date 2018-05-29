@@ -14,12 +14,10 @@ public class HouMuch{
 		System.out.println("몇 퍼센트 DC할께요?");
 		int sale = scanner.nextInt();
 
-		String result="";
+		String result="안팔아요";
 		
-		if(sale>=10){
-		result = "안팔아요";
-	}else{
-		result = sum*(100*sale)/100 + "원 입니다.";
+		if(sale<10){
+		result = "할인된 금액은"+sum*(100-sale)/100 + "원 입니다.";
 	}
 		System.out.println(result);
 	}
