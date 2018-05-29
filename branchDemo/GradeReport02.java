@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class GradeReport02{
-	public static void main(Stringp[] args){
+	public static void main(String[] args){
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("이름 ?");
 		String name = scanner.next();
@@ -14,29 +14,29 @@ public class GradeReport02{
 		System.out.println("합계 : "+sum);
 		
 		int avg = (sum)/3;
-		String grade = "";
+		String grade = " ";
 
-		switch(avg)
-		case "10": 
-		case "9":
-			grade:"A";
+		switch(avg){
+		case 10: 
+		case 9:
+			grade="A";
 			break;
-		case "8":
-			grade:"B";
+		case 8:
+			grade="B";
 			break;
-		case "7":
-			grade:"C";
+		case 7:
+			grade="C";
 			break;
-		case "6":
-			grade:"D";
+		case 6:
+			grade="D";
 			break;
-		case "5":
-			grade:"F";
+		case 5:
+			grade="F";
 			break;
 		default:
-			grade:"E";
+			grade="E";
 			break;
-
+	}
 
 
 		System.out.println(name+"[평균]" +avg+ "[학점]" +grade);
